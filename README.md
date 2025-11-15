@@ -10,7 +10,7 @@ A empresa **MateCheck** contratou você para criar uma versão estruturada do WA
 
 ### 🎯 Objetivo
 
-- Criar uma `struct` chamada `Territorio`.
+- Criar uma `struct` chamada `Territorio`. OK 
 - Usar um **vetor estático de 5 elementos** para armazenar os territórios.
 - Cadastrar os dados de cada território: **Nome**, **Cor do Exército**, e **Número de Tropas**.
 - Exibir o estado atual do mapa.
