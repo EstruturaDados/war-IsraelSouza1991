@@ -24,7 +24,7 @@ int main() {
 
     struct Territorio territorio [NUM_TERRITORIOS];
     
-
+    // cadastrar os territórios:
 
     printf("\n\nVamos cadastrar os 5 territórios do nosso mundo.\n\n");
     
@@ -32,15 +32,17 @@ int main() {
     for (int i = 0; i < NUM_TERRITORIOS; i++) {
         printf("Nome do território %d\n Digite: ", i + 1);
         fgets(territorio[i].nome, MAX_STRING, stdin);
-        territorio[i].nome[strcspn(territorio[i].nome, "\n")] = 0; // Remove o '\n' do final da string
+        territorio[i].nome[strcspn(territorio[i].nome, "\n")] = 0;
 
         printf("Cor do exército que domina o território %d\n Digite: ", i + 1);
         fgets(territorio[i].corExercito, MAX_STRING, stdin);
-        territorio[i].corExercito[strcspn(territorio[i].corExercito, "\n")] = 0; // Remove o '\n' do final da string
+        territorio[i].corExercito[strcspn(territorio[i].corExercito, "\n")] = 0; 
 
         printf("Número de tropas no território %d\n Digite: ", i + 1);
         scanf("%d", &territorio[i].numTropas);
         getchar(); // Limpa o buffer de entrada
+
+        printf("\n--------------------------------------------\n\n");
     }
     printf("\nPronto. Cadastro de territórios concluído...\n\n");
 
